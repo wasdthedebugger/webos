@@ -1,0 +1,233 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-image: url(/assets/img/background.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+
+.taskbar {
+    width: 100%;
+    background-color: rgb(13, 11, 11);
+    height: 40px;
+    bottom: 0;
+    position: absolute;
+    opacity: 1;
+    display: flex;
+    z-index: 100;
+}
+
+.start {
+    width: 49px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    transition: 0.1s;
+    display: flex;
+}
+
+.start:hover {
+    background-color: rgb(27, 26, 26);
+}
+
+.icon img {
+    height: 22px;
+}
+
+.menu {
+    height: 600px;
+    width: 600px;
+    background-color: rgb(27, 26, 26);
+    bottom: 0;
+    position: absolute;
+    z-index: 1000;
+    margin-bottom: 40px;
+}
+
+#menu {
+    display: none;
+}
+
+#dragcontent1 {
+    position: absolute;
+    z-index: 9;
+    text-align: left;
+}
+
+#draghead1 {
+    padding: 10px;
+    cursor: default;
+    z-index: 10;
+    background-color: rgb(27, 26, 26);
+    color: #fff;
+    display: flex;
+}
+
+#dragcontent2 {
+    position: absolute;
+    z-index: 9;
+    text-align: left;
+}
+
+#draghead2 {
+    padding: 10px;
+    cursor: default;
+    z-index: 10;
+    background-color: rgb(27, 26, 26);
+    color: #fff;
+    display: flex;
+}
+
+#vscodeiframe {
+    height: 600px;
+    width: 1000px;
+}
+
+#minecraftiframe {
+    height: 600px;
+    width: 1000px;
+}
+
+
+#vslogo {
+    height: 15px;
+    margin-right: 20px;
+    margin-left: 5px;
+}
+
+#minecraftlogo {
+    height: 15px;
+    margin-right: 20px;
+    margin-left: 5px;
+}
+
+#vscode {
+    display: none;
+    transform: translateX(17%);
+}
+
+#minecraft {
+    display: none;
+    transform: translateX(17%);
+}
+
+.vscodelogo {
+    height: 100%;
+}
+
+.right {
+    right: 0;
+    position: absolute;
+    height: 100%;
+    margin-right: 10px;
+}
+
+#close {
+    background-color: red;
+    border: none;
+    color: white;
+    font-weight: bold;
+}
+
+.center {
+    margin: auto;
+    display: flex;
+}
+
+.tb-right {
+    right: 0;
+    display: flex;
+}
+
+.hide {
+    height: 100%;
+    width: 4.1px;
+    background-color: rgb(13, 11, 11);
+    border-left: 1px solid rgba(227, 217, 217, 0.619);
+}
+
+.hide:hover {
+    background-color: rgb(27, 26, 26);
+}
+
+.action {
+    margin-right: 5px;
+}
+
+#clock {
+    width: fit-content;
+    padding-right: 10px;
+    padding-left: 10px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    transition: 0.1s;
+    display: flex;
+    color: white;
+    font-size: small;
+}
+
+#clock:hover {
+    background-color: rgb(27, 26, 26);
+    width: fit-content;
+}
+
+#actionbar {
+    right: 0;
+    position: absolute;
+    background-color: rgb(27, 26, 26);
+    height: 100%;
+    width: 400px;
+    display: none;
+}
+
+.minimize {
+    background-color: white;
+    border: none;
+    color: black;
+    font-weight: bold;
+}
+
+.space {
+    width: 70px;
+    height: 100%;
+}
+
+.terminal {
+    width: 49px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    transition: 0.1s;
+    display: flex;
+}
+
+.terminal img {
+    height: 18px;
+}
+
+.terminal:hover {
+    background-color: rgb(27, 26, 26);
+}
+
+.minecraft {
+    width: 49px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    transition: 0.1s;
+    display: flex;
+}
+
+.minecraft img {
+    height: 22px;
+    width: 22px;
+}
+
+.minecraft:hover {
+    background-color: rgb(27, 26, 26);
+}

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>WASD OS</title>
+</head>
+
+<body>
+
+    <div id="actionbar">
+
+    </div>
+
+
+    <div id="vscode">
+        <div id="dragcontent1">
+
+            <div id="draghead1">
+                <img src="assets/img/vscode.svg" alt="" id="vslogo">Visual Studio Code
+                <div class="right">
+                    <button onclick="code()" id="minimize">-</button>
+                    <button onclick="code()" id="close">X</button>
+                </div>
+            </div>
+
+            <iframe id="vscodeiframe" src="https://github1s.com/wasdthedebugger/vscodeonline/blob/HEAD/README.md"
+                frameborder="0"></iframe>
+
+        </div>
+    </div>
+
+
+    <div id="minecraft">
+        <div id="dragcontent2">
+
+            <div id="draghead2">
+                <img src="assets/img/minecraft.png" alt="" id="minecraftlogo">Minecraft
+                <div class="right">
+                    <button onclick="minecraft()" id="minimize">-</button>
+                    <button onclick="minecraft()" id="close">X</button>
+                </div>
+            </div>
+
+            <iframe id="minecraftiframe" src="https://classic.minecraft.net/" frameborder="0"></iframe>
+
+        </div>
+    </div>
+
+
+
+    <div class="start menu" id="menu">
+
+    </div>
+
+    <div class="taskbar">
+        <div class="start icon" onclick="menu()">
+            <img src="assets/img/start.png" alt="">
+        </div>
+
+        <span class="space"></span>
+
+        <span class="center">
+
+            <div class="terminal" onclick="bash()">
+                <img src="assets/img/terminal.png">
+            </div>
+            <div class="start icon" onclick="code()">
+                <img src="assets/img/vscode.svg" alt="">
+            </div>
+
+            <div class="minecraft" onclick="minecraft()">
+                <img src="assets/img/minecraft.png" alt="">
+            </div>
+        </span>
+
+
+
+        <div class="tb-right">
+            <div id="clock" onload="currentTime()"></div>
+            <div class="start action" onclick="actionbar()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-chat-square" viewBox="0 0 16 16">
+                    <path fill="white"
+                        d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1h-2.5a2 2 0 0 0-1.6.8L8 14.333 6.1 11.8a2 2 0 0 0-1.6-.8H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2.5a1 1 0 0 1 .8.4l1.9 2.533a1 1 0 0 0 1.6 0l1.9-2.533a1 1 0 0 1 .8-.4H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z" />
+                </svg>
+            </div>
+
+        </div>
+
+        <span class="tb-right hide" onclick="hide()">
+
+        </span>
+
+    </div>
+
+    </div>
+</body>
+
+<script src="assets/js/drag1.js">
+</script>
+<script src="assets/js/drag2.js">
+</script>
+<script src="assets/js/divs.js">
+</script>
+<script src="assets/js/time.js">
+</script>
+<script src="assets/js/redirects.js">
+</script>
+
+</html>
