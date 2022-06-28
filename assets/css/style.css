@@ -231,3 +231,16 @@ body {
 .minecraft:hover {
     background-color: rgb(27, 26, 26);
 }
+
+#pleaserotate-backdrop{
+    background-color: rgb(13, 11, 11);
+}
+
+#pleaserotate-message{
+    font-weight: bold;
+    color: white;
+}
+
+#pleaserotate-graphic{
+    fill: white;
+}
