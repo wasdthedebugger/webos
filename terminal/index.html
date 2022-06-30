@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="https://unpkg.com/jquery.terminal/js/jquery.terminal.min.js"></script>
+<link rel="stylesheet" href="https://unpkg.com/jquery.terminal/css/jquery.terminal.min.css"/>
+</head>
+<body>
+</body>
+<script>
+    $('body').terminal({
+        whoami: function() {
+            this.echo('wasdthedebugger\n');
+        },
+        ls: function() {
+            this.echo('No files or folders here.\n');
+        },
+        help: function() {
+            this.echo('Commands: wasd, whoami, ls, credit, clear.\n');
+        },
+        credit: function() {
+            this.echo('| https://github.com/jcubic/jquery.terminal |\n');
+        },
+        wasd: function() {
+            this.echo('| https://nikas.com.np |\n');
+        },
+
+    }, {
+        greetings: 'Terminal [Version Beta 1.0]\n(c) Everyone. MIT License.\n'
+    });
+    </script>
+</html>

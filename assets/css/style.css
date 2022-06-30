@@ -82,6 +82,36 @@ body {
     display: flex;
 }
 
+#dragcontent3 {
+    position: absolute;
+    z-index: 9;
+    text-align: left;
+}
+
+#draghead3 {
+    padding: 10px;
+    cursor: default;
+    z-index: 10;
+    background-color: rgb(27, 26, 26);
+    color: #fff;
+    display: flex;
+}
+
+#dragcontent4 {
+    position: absolute;
+    z-index: 9;
+    text-align: left;
+}
+
+#draghead4 {
+    padding: 10px;
+    cursor: default;
+    z-index: 10;
+    background-color: rgb(27, 26, 26);
+    color: #fff;
+    display: flex;
+}
+
 #vscodeiframe {
     height: 600px;
     width: 1000px;
@@ -92,6 +122,15 @@ body {
     width: 1000px;
 }
 
+#phpiframe {
+    height: 600px;
+    width: 1000px;
+}
+
+#terminaliframe{
+    height: 600px;
+    width: 1000px;
+}
 
 #vslogo {
     height: 15px;
@@ -177,11 +216,14 @@ body {
 }
 
 #actionbar {
-    right: 0;
-    position: absolute;
-    background-color: rgb(27, 26, 26);
     height: 100%;
     width: 400px;
+    background-color: rgb(27, 26, 26);
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: 1000;
+    margin-bottom: 40px;
     display: none;
 }
 
@@ -230,4 +272,20 @@ body {
 
 .minecraft:hover {
     background-color: rgb(27, 26, 26);
+}
+
+#windowlogo {
+    height: 15px;
+    margin-right: 20px;
+    margin-left: 5px;
+}
+
+#php {
+    display: none;
+    transform: translateX(17%);
+}
+
+#terminal {
+    display: none;
+    transform: translateX(17%);
 }

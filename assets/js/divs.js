@@ -34,3 +34,19 @@ function minecraft() {
         document.getElementById('minecraft').style.display = "none";
     }
 }
+
+function php() {
+    if (document.getElementById('php').style.display == "none") {
+        document.getElementById('php').style.display = "block";
+    } else {
+        document.getElementById('php').style.display = "none";
+    }
+}
+
+function terminal() {
+    if (document.getElementById('terminal').style.display == "none") {
+        document.getElementById('terminal').style.display = "block";
+    } else {
+        document.getElementById('terminal').style.display = "none";
+    }
+}

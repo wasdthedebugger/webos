@@ -29,8 +29,7 @@
                 </div>
             </div>
 
-            <iframe id="vscodeiframe" src="https://github1s.com/wasdthedebugger/vscodeonline/"
-                frameborder="0"></iframe>
+            <iframe id="vscodeiframe" src="https://github1s.com/wasdthedebugger/vscodeonline/" frameborder="0"></iframe>
 
         </div>
     </div>
@@ -47,13 +46,42 @@
                 </div>
             </div>
 
-            <iframe id="minecraftiframe" src="https://classic.minecraft.net/"
-                frameborder="0"></iframe>
+            <iframe id="minecraftiframe" src="https://classic.minecraft.net/" frameborder="0"></iframe>
 
         </div>
     </div>
 
+    <div id="php">
+        <div id="dragcontent3">
 
+            <div id="draghead3">
+                <img src="assets/img/php.png" alt="" id="windowlogo">Php Org
+                <div class="right">
+                    <button onclick="php()" id="minimize">-</button>
+                    <button onclick="php()" id="close">X</button>
+                </div>
+            </div>
+
+            <iframe id="phpiframe" src="https://php.org/" frameborder="0"></iframe>
+
+        </div>
+    </div>
+
+    <div id="terminal">
+        <div id="dragcontent4">
+
+            <div id="draghead4">
+                <img src="assets/img/terminal.png" alt="" id="windowlogo">Terminal
+                <div class="right">
+                    <button onclick="terminal()" id="minimize">-</button>
+                    <button onclick="terminal()" id="close">X</button>
+                </div>
+            </div>
+
+            <iframe id="terminaliframe" src="terminal/index.html" frameborder="0"></iframe>
+
+        </div>
+    </div>
 
     <div class="start menu" id="menu">
 
@@ -65,16 +93,23 @@
         </div>
 
         <span class="start icon">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
-                <path fill="white" d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
-              </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search"
+                viewBox="0 0 16 16">
+                <path fill="white"
+                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+            </svg>
         </span>
 
         <span class="center">
 
-            <div class="terminal" onclick="bash()">
+            <div class="terminal" onclick="terminal()">
                 <img src="assets/img/terminal.png">
             </div>
+
+            <div class="start icon" onclick="php()">
+                <img src="assets/img/php.png">
+            </div>
+
             <div class="start icon" onclick="code()">
                 <img src="assets/img/vscode.svg" alt="">
             </div>
@@ -110,6 +145,10 @@
 <script src="assets/js/drag1.js">
 </script>
 <script src="assets/js/drag2.js">
+</script>
+<script src="assets/js/drag3.js">
+</script>
+<script src="assets/js/drag4.js">
 </script>
 <script src="assets/js/divs.js">
 </script>
