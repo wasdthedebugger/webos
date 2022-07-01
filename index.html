@@ -9,6 +9,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <link rel="image_src" href="assets/img/preview.png"/>
+    <link rel="icon" type="image/x-icon" href="assets/icons/192.png">
     <title>Debugger's Simulation</title>
 </head>
 
@@ -156,6 +157,17 @@
 <script src="assets/js/time.js">
 </script>
 <script src="assets/js/redirects.js">
+</script>
+<script>
+    if('serviceWorker' in navigator){
+        navigator.serviceWorker.register('sw.js').then(registration => {
+            console.log("SW Registered");
+            console.log(registration);
+        }).catch(error => {
+            console.log("SW Registration Failed");
+            console.log(error);
+        });
+    }
 </script>
 
 </html>
